@@ -1,7 +1,79 @@
-h1 {
-    color: red;
+@font-face {
+    font-family: "Raleway";
+    src: url('Police/Raleway-VariableFont_wght.ttf') format('truetype');
 }
-h2{
-    color:black;
-    
+
+h1 {
+    color: blue;
+}
+
+body {
+    font-family: 'Raleway';
+    font-size: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.liste {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.search {
+    display: inline-flex;
+    align-self: baseline;
+    border: 2px solid #eee;
+}
+
+.inscription {
+    color: blue;
+    font-weight: bold;
+}
+
+.hebergement {
+    border-top: blue solid;
+    display: flex;
+}
+
+.icon {
+    display: inline-block;
+    line-height: 50px;
+    padding-left: 30px;
+    background: url("images/map-marker-alt-solid.svg") no-repeat scroll 0 0 transparent;
+    background-color: #eee;
+    border-radius: 1rem 0 0 1rem;
+    background-position: center;
+}
+
+.recherche {
+    background-color: #0065fc;
+    color: white;
+    border-radius: 0 1rem 1rem 0;
+    line-height: 30px;
+}
+
+.input {
+    color: black;
+    font-weight: bold;
+}
+
+.filtre {}
+
+.icon_filtre {}
+
+.footer {
+    display: flex;
+}
+
+h3 {
+    display: flex;
+}
+
+.footer ul {
+    list-style: none;
 }
