@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: "Raleway";
-    src: url('Police/Raleway-VariableFont_wght.ttf') format('truetype');
+    src: url("Police/Raleway-VariableFont_wght.ttf") format("truetype");
 }
 
 a {
@@ -20,12 +20,12 @@ a {
     color: black;
 }
 
-h1 {
-    color: blue;
+::placeholder {
+    color: black;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 
@@ -61,30 +61,55 @@ nav {
 
 /* search section */
 
+.title {
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.title-main {
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
 .search {
-    display: inline-flex;
-    align-self: baseline;
-    border: 2px solid #eee;
-}
-
-.inscription {
-    color: blue;
-    font-weight: bold;
-}
-
-.hebergement {
-    border-top: blue solid;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
-.icon {
-    display: inline-block;
-    line-height: 50px;
-    padding-left: 30px;
-    background: url("images/map-marker-alt-solid.svg") no-repeat scroll 0 0 transparent;
-    background-color: #eee;
-    border-radius: 1rem 0 0 1rem;
-    background-position: center;
+.search i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 56px;
+    min-height: 56px;
+    background-color: #f2f2f2;
+    border-radius: 16px 0px 0px 16px;
+    font-size: 20px;
+}
+
+.search input {
+    height: 56px;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.search button {
+    height: 56px;
+    border: none;
+    border-radius: 0px 16px 16px 0px;
+    color: white;
+    background-color: #0065fc;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0 16px;
 }
 
 .recherche {
@@ -92,11 +117,6 @@ nav {
     color: white;
     border-radius: 0 1rem 1rem 0;
     line-height: 30px;
-}
-
-.input {
-    color: black;
-    font-weight: bold;
 }
 
 .footer {
@@ -109,4 +129,51 @@ h3 {
 
 .footer ul {
     list-style: none;
+}
+
+.filter-link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 16px 16px 16px 16px;
+    margin-right: 25px;
+    border: 2px solid #f2f2f2;
+    background-color: white;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.filters h2 {
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.filter-link i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #0065fc;
+    font-size: 17px;
+    background-color: #deebff;
+    height: 50px;
+    width: 50px;
+}
+
+.filter-link span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
 }

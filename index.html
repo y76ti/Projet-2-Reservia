@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="styles.css">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
     <title>Projet Reservia</title>
 </head>
 
@@ -21,19 +23,32 @@
 
                 </ul>
             </nav>
-            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-            <p>En plein centre ville ou en pleine nature</p>
+            <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="title-main">En plein centre ville ou en pleine nature</p>
             <div class="search ">
-                <label class="icon "></label>
-                <input class="input " placeholder="Marseille,France " type="search " id="site-search " name="q " aria-label="Search through site content ">
-
-                <button class="recherche ">Rechercher</button>
+                <i class="fas fa-map-marker-alt"></i>
+                <input placeholder="Marseille, France" type="text">
+                <button type="button"> Rechercher</button>
             </div>
-            <p>Filtres</p>
-            <button class="filtre "><div class="icon_filtre "></div>Économique</button>
-            <button class="filtre "><div class="icon_filtre "></div>Familial</button>
-            <button class="filtre "><div class="icon_filtre "></div>Romantique</button>
-            <button class="filtre "><div class="icon_filtre "></div>Animaux autorisés</button>
+            <div class="filters">
+                <h2>Filtres</h2>
+                <button type="button" class="filter-link economique">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>&Eacute;conomique</span>
+                </button>
+                <button type="button" class="filter-link familial">
+                    <i class="fas fa-child"></i>
+                    <span>Familial</span>
+                </button>
+                <button type="button" class="filter-link romantique">
+                    <i class="fas fa-heart"></i>
+                    <span>Romantique</span>
+                </button>
+                <button type="button" class="filter-link animal">
+                    <i class="fas fa-dog"></i>
+                    <span>Animaux autoris&eacute;s</span>
+                </button>
+            </div>
         </header>
         <main>
             <div class="host-popular ">
