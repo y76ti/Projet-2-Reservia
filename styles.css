@@ -62,12 +62,12 @@ nav {
 /* search section */
 
 .title {
-    font-size: 25px;
+    font-size: 23px;
     padding-bottom: 5px;
 }
 
 .title-main {
-    font-size: 25px;
+    font-size: 17px;
     padding-bottom: 15px;
 }
 
@@ -98,7 +98,7 @@ nav {
     border-bottom: 2px solid #f2f2f2;
     font-weight: bold;
     padding-left: 15px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .search button {
@@ -108,7 +108,7 @@ nav {
     color: white;
     background-color: #0065fc;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
     padding: 0 16px;
 }
 
@@ -135,8 +135,8 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    border-radius: 16px 16px 16px 16px;
-    margin-right: 25px;
+    border-radius: 35px 35px 35px 35px;
+    margin-right: 20px;
     border: 2px solid #f2f2f2;
     background-color: white;
 }
@@ -163,8 +163,9 @@ h3 {
     color: #0065fc;
     font-size: 17px;
     background-color: #deebff;
-    height: 50px;
-    width: 50px;
+    height: 54px;
+    width: 54px;
+    margin: -2px;
 }
 
 .filter-link span {
@@ -172,8 +173,204 @@ h3 {
     align-items: center;
     justify-content: center;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 20px;
     height: 50px;
     font-weight: bold;
     font-size: 15px;
 }
+
+
+/* début info */
+
+.info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.info i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    min-height: 30px;
+    min-width: 30px;
+    border: 2px solid #f2f2f2;
+    color: #0065fc;
+    border-radius: 50%;
+}
+
+.info p {
+    font-size: 15px;
+}
+
+
+/* Fin info */
+
+.footer {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    border: 2px solid #f2f2f2;
+}
+
+.footer li {
+    display: flex;
+}
+
+
+/* tourisme marseille */
+
+.host-popular {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.host {
+    /* flex basis sert a occuper l'espace */
+    flex-basis: 65%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.popular {
+    flex-basis: 32%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+
+/* hebergement à marseille */
+
+.host h2 {
+    font-size: 20px;
+    padding: 40px 0px 30px 40px;
+}
+
+.host-cartes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+.host-carte-item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px #b1b1b1;
+}
+
+.host-carte-item img {
+    border-radius: 20px 20px 0px 0px;
+    height: 110px;
+    /* object fit empêcher l'écrasement des img */
+    object-fit: cover;
+}
+
+.host-carte-item-contenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0px 5px 15px;
+    min-height: 90px;
+}
+
+.host-carte-item-contenu h3 {
+    font-size: 15px;
+}
+
+.host-carte-item-contenu p {
+    font-size: 15px;
+}
+
+.afficher-plus {
+    font-weight: bold;
+    border: none;
+    margin: 50px 0px 50px 30px;
+    font-size: 20px;
+}
+
+
+/* Fin hebergement a marseille */
+
+.fa-star {
+    color: #0065fc;
+}
+
+.grey {
+    color: #b1b1b1;
+}
+
+
+/* plus populaires */
+
+.popular-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 30px 40px;
+}
+
+.popular h2 {
+    font-size: 20px;
+}
+
+.popular i {
+    font-size: 20px;
+}
+
+.popular-cartes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+.popular-carte-item {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px #b1b1b1;
+}
+
+.popular-carte-item img {
+    border-radius: 20px 0px 0px 20px;
+    height: 110px;
+    max-width: 35%;
+    min-width: 35%;
+    /* object fit empêcher l'écrasement des img */
+    object-fit: cover;
+}
+
+.popular-carte-item-contenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0px 5px 15px;
+    min-height: 90px;
+}
+
+.popular-carte-item-contenu h3 {
+    font-size: 15px;
+}
+
+.popular-carte-item-contenu p {
+    font-size: 15px;
+}
+
+
+/* Fin plus populaires */
